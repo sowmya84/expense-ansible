@@ -26,7 +26,7 @@
   - name: connect to mysql server
     community.mysql.mysql_info:
       login_user: root
-      login_password: ExpenseApp@1
+      login_password: "{{ mysql_root_password }}"
       login_host: mysql.sdaws-82s.online
     register: mysql_info
     ignore_errors: true
