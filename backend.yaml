@@ -43,7 +43,12 @@
   - name: Copy backend service 
     ansible.builtin.copy:
       src: backend.service
-      dest: /etc/systemd/system/backend.service                  
+      dest: /etc/systemd/system/backend.service
+
+  - name: insatll python libs
+    ansible.builtin.pip:
+      name: PyMySQL
+      executable: pip3.9                      
       
   - name: import mysql data
     community.mysql.mysql_db:
