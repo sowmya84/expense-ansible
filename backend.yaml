@@ -52,9 +52,9 @@
       
   - name: import mysql data
     community.mysql.mysql_db:
-    state: import
-    name: all
-    login_user: root
-    login_password: ExpenseApp@1
-    login_host: mysql.sdaws-82s.online
-    target: /app/schema/backend.sql    
+      state: import
+      name: all
+      login_user: root
+      login_password: ExpenseApp@1
+      login_host: mysql.sdaws-82s.online
+      target: /app/schema/backend.sql    
