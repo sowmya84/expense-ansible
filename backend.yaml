@@ -57,4 +57,4 @@
       login_user: root
       login_password: ExpenseApp@1
       login_host: mysql.sdaws-82s.online
-      target: /app/schema/backend.sql    
+      target: /app/schema/backend.sql
